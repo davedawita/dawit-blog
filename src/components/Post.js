@@ -6,14 +6,20 @@ import {Link, useNavigate} from 'react-router-dom'
   const divStyle = {
     textAlign: "center",
     border: "3px solid",
-    margin: "10px auto",
-    width: "80%",
+    margin: "15px auto",
+    width: "60%",
+    fontSize: '0.7em',
+    backgroundColor: "#caae98",
+    height: "200px",
+    padding: "20px",
+
   }
 
   const titleStyle = {
     textAlign: "center",
-    color: "#006643",
-    fontSize: '4em'
+    color: "#800000",
+    fontSize: '3em',
+    textDecoration: 'none',
   }
 
 
@@ -33,7 +39,7 @@ const Post = ({post, deleteBlog}) => {
       </Link>      
       <h2>{post.Body}</h2>
       <form onSubmit={handleDelete}>
-        <input type='submit' value='Delete Blog' />
+        <input className='deleteBlog'type='submit' value='Delete Blog' />
 
       </form>
     </div>

@@ -44,7 +44,7 @@ const Form = (props) => {
         name='Title'
       />
 
-      <h3>Body</h3>
+      <h3 className = 'EditBody'>Body</h3>
       <input className='Desc'
         type='text'
         onChange={handleChange}
@@ -52,7 +52,7 @@ const Form = (props) => {
         name='Body'
       />
 
-      <input type='submit' value={props.buttonLabel}/>
+      <input type='submit' value={props.buttonLabel} className='Btn'/>
 
     </form>
   )
