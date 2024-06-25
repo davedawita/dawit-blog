@@ -11,7 +11,7 @@ import {useState, useEffect} from 'react'
 import {Route, Routes} from 'react-router-dom'
 
 //OUR API URL
-const apiURL = 'https://blog-app-api-dawit-90b8eca2d065.herokuapp.com/'
+const apiURL = REACT_APP_BACKEND_URL || 'http://localhost:8000'
 
 
 function App() {
