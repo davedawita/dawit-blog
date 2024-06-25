@@ -34,7 +34,7 @@ function App() {
 
   const handleFormSubmission = async (data, type) => {
     if(type === 'new'){     //If new, we are creating a resource    
-    const response = await fetch(`${apiURL}/blogs/`, {
+    await fetch(`${apiURL}/blogs/`, {
       method: 'post',
       headers: {
         "content-Type": "application/json",
@@ -43,7 +43,7 @@ function App() {
     })
     getBlogs()
   } else {
-    const response = await fetch(`${apiURL}/blogs/${data.id}/`, {         //Here, data is bubbling up from Form.js
+    await fetch(`${apiURL}/blogs/${data.id}/`, {         //Here, data is bubbling up from Form.js
       method: 'put',
       headers: {
         "content-Type": "application/json",
@@ -57,7 +57,7 @@ function App() {
   //Define a function for delete:
 
   const deleteBlog = async (id) => {
-    const response = await fetch(`${apiURL}/blogs/${id}/`,
+    await fetch(`${apiURL}/blogs/${id}/`,
     {
       method: 'delete'
     })
