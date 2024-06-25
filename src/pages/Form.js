@@ -1,9 +1,6 @@
 import {useMemo, useState} from 'react'
 import {useNavigate, useParams} from 'react-router-dom'
 
-
-
-
 const Form = (props) => {
 
   const navigate = useNavigate()
@@ -38,9 +35,9 @@ const Form = (props) => {
     navigate('/')      //To go back to the home page.
   }
   return (
-    <form onSubmit={handleSubmission}>
-      <h3>Title</h3>
-      <input
+    <form onSubmit={handleSubmission} className='Form'>
+      <h3 className = 'EditTitle'>Title</h3>
+      <input className='input'
         type='text'
         onChange={handleChange}
         value={formData.Title}
@@ -48,7 +45,7 @@ const Form = (props) => {
       />
 
       <h3>Body</h3>
-      <input
+      <input className='Desc'
         type='text'
         onChange={handleChange}
         value={formData.Body}
