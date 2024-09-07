@@ -76,6 +76,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='BigTitle'>Dawit's Blog</h1>
+      
       <Routes>
         <Route
           exact 

@@ -4,9 +4,12 @@
 
 .BigTitle{
   color: white;
-  background-color: rgba(0, 0, 0, 0.888);
-  height: 75px;
+  background: url("https://i.imgur.com/k8V0dIo.jpg");
+  background-size: cover;
+  height: 280px;
   font-size: 60px;
+  padding:20px
+  
 }
 
 .EditTitle{
