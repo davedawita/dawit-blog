@@ -2,6 +2,7 @@ import {useMemo} from 'react'
 import {Link, useParams} from 'react-router-dom'
 
 const SinglePost = ({posts}) => {
+
   const params = useParams()
   const currentPost = useMemo(() => posts.find(post => post.id === parseInt(params.id)), [params.id, posts])
 
